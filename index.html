@@ -76,11 +76,21 @@
         <!--Membuat Form | atribut lable dan id-->
         <form>
             <h2>Give your feedback here</h2>
-            <label for="nama_user">name</label>
+            <label for="nama_user"><b>Name</b></label><br>
             <input type="text" placeholder="Your name" id="nama_user">
-            <br><br>
-            <label for="name">feedback</label>
+            <br>
+            <label for="name"><b>feedback</b></label><br>
             <textarea cols="100" rows="7" id="name"></textarea>
+            <br>
+            <label><b>status</b></label><br>
+            <input type="checkbox" name="status" value="0"> employees
+            <input type="checkbox" name="status" value="1"> students
+            <input type="checkbox" name="status" value="2" checked> college student
+            <input type="checkbox" name="status" value="3"> freelancer 
+            <br>
+            <label><b>gender</b></label><br>
+            <input type="radio" name="gender" value="0"> male
+            <input type="radio" name="gender" value="1"> female
         </form>
 
         <br><br>
