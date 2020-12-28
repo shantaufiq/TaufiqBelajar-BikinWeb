@@ -73,24 +73,37 @@
             </tr>
         </table>
 
-        <!--Membuat Form | atribut lable dan id-->
+        <!--Membuat Form | atribut lable dan id | Checkbox & Radio | Select & option-->
         <form>
             <h2>Give your feedback here</h2>
             <label for="nama_user"><b>Name</b></label><br>
             <input type="text" placeholder="Your name" id="nama_user">
             <br>
-            <label for="name"><b>feedback</b></label><br>
+            <label for="name"><b>Feedback</b></label><br>
             <textarea cols="100" rows="7" id="name"></textarea>
             <br>
-            <label><b>status</b></label><br>
-            <input type="checkbox" name="status" value="0"> employees
-            <input type="checkbox" name="status" value="1"> students
-            <input type="checkbox" name="status" value="2" checked> college student
-            <input type="checkbox" name="status" value="3"> freelancer 
+            <label><b>favorite vacation place</b></label><br>
+            <input type="checkbox" name="favorite" value="0"> mountain
+            <input type="checkbox" name="favorite" value="1"> beach
+            <input type="checkbox" name="favorite" value="2" checked> forest
+            <input type="checkbox" name="favorite" value="3"> zoo
             <br>
-            <label><b>gender</b></label><br>
+            <label><b>Gender</b></label><br>
             <input type="radio" name="gender" value="0"> male
             <input type="radio" name="gender" value="1"> female
+            <br>
+            <label><b>status</b></label><br>
+                <select>
+                    <optgroup label="teenager">
+                    <option value="Cs">college student</option>
+                    <option value="S">students</option>
+                    </optgroup>
+
+                    <optgroup label="adult">
+                    <option value="E">employees</option>
+                    <option value="F">freelancer</option>
+                    </optgroup>
+                </select>
         </form>
 
         <br><br>
