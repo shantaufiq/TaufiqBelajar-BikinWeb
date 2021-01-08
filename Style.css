@@ -10,6 +10,8 @@ body{
     */
     background: #86abb0 url(image/back.JPG) center no-repeat fixed;
     background-size: 1200px;
+    
+    font-family: sans-serif;
 }
 
 /* Selector ID dan class | background color*/
@@ -25,7 +27,7 @@ h6{
     color: teal;
 }
 
-/* text decoration*/
+/* text decoration */
 h1{
     text-align: center;
     text-transform: uppercase;
@@ -44,4 +46,29 @@ h2{
     word-spacing: 5px;
     line-height: 17px;
     line-break: normal;
+}
+
+/* belajar font */
+#sebutkan{
+    font-size: 35px;
+    background-color: cornsilk;
+    font-weight: bolder;
+}
+
+/* menghias link | kondisi biasanya*/
+.menu:link{
+    background: orange;
+    font-size: 20px;
+}
+/* kondisi setelah dikujungi */
+.menu:visited{
+    background: green;
+}
+/* kondisi hover */
+.menu:hover{
+    background:  greenyellow;
+}
+/* kondisi active */
+.menu:active{
+    background: red;
 }
