@@ -1,4 +1,9 @@
 
+
+*{
+    margin: 20px 50px 20px 50px;
+}
+
 body{
     /*
     background-color: #86abb0;
@@ -9,8 +14,8 @@ body{
     background-attachment: fixed; => (scrol)
     */
     background: #86abb0 url(image/back.JPG) center no-repeat fixed;
-    background-size: 1200px;
-    
+    background-size: 1300px;
+
     font-family: sans-serif;
 }
 
@@ -21,6 +26,7 @@ body{
 
 #backg{
     background-color: rgb(155, 22, 155);
+    max-width: 200px;
 }
 
 h6{
@@ -46,6 +52,15 @@ h2{
     word-spacing: 5px;
     line-height: 17px;
     line-break: normal;
+    
+    margin-left: 0px;
+    margin-right: 0px;
+
+    /* +dimensi */
+    width: 1200px;
+    height: 100px;
+
+    padding: 10px;
 }
 
 /* belajar font */
@@ -53,6 +68,10 @@ h2{
     font-size: 35px;
     background-color: cornsilk;
     font-weight: bolder;
+
+    /* +dimensi max */
+    max-width: 65%;
+    max-height: 0%;
 }
 
 /* menghias link | kondisi biasanya*/
@@ -72,3 +91,29 @@ h2{
 .menu:active{
     background: red;
 }
+
+/* display */
+.menu{
+    margin: 0 0 0 0;
+    display: inline-block;
+    /*width:70px;
+    height:50px;*/
+    text-decoration: none;
+
+    /*
+        border-width: 3px;
+        border-style: solid
+        border-color: orange;    
+    */
+    border: 3px solid rgb(255, 204, 108);
+
+    /* padding */
+    padding: 10px;
+}
+
+/* menghilangkan element */
+#iglost{
+    visibility: hidden;
+}
+
+/* box model dan margin => margin: top right bottom left; */
