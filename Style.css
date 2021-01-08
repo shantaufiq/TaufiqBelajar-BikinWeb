@@ -1,11 +1,46 @@
+
+body{
+    /*
+    background-color: #86abb0;
+    background-image: url(image/back.JPG);
+    background-size: 1300px;
+    background-position: center;
+    background-repeat: no-repeat; => (pengulangan)
+    background-attachment: fixed; => (scrol)
+    */
+    background: #86abb0 url(image/back.JPG) center no-repeat fixed;
+    background-size: 1200px;
+}
+
+/* Selector ID dan class | background color*/
 .biru{
     color: yellowgreen;
 }
 
 #backg{
-    background-color: violet;
+    background-color: rgb(155, 22, 155);
 }
 
 h6{
     color: teal;
+}
+
+/* text decoration*/
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: capitalize;
+}
+
+#paragraf{
+    text-align: justify;
+    text-indent: 30px;
+    color: rgb(100, 102, 190);
+    background-color: rgb(211, 205, 243);
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    line-height: 17px;
 }
