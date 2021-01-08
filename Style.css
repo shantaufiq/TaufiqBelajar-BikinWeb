@@ -43,4 +43,5 @@ h2{
     letter-spacing: 1.5px;
     word-spacing: 5px;
     line-height: 17px;
+    line-break: normal;
 }
