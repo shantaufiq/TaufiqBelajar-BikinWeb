@@ -31,7 +31,7 @@
         <h6> Selamat Datang di Blog Taufiq </h6>
        
         <!-- menambahkan link & space -->
-        <div>
+        <div id="par">
             <h4 id="paragraf">Sejak maret 2020 masyarakat diresahkan dengan adanya pandemi covid di Indonesia, 
                 tentunya membuat sobat explorer gak sabar untuk liburan keluar kota setelah 6 bulan dalam masa karantina. Namun, saat ini pemerintah sudah mulai melonggarkan peraturan, 
                 dengan masih membuka tempat wisata dibeberapa tempat namun apabila kita mau berkunjung kesana kita harus memenuhi beberapa protokol terlebih dahulu. Aturan memenuhi protokol ini 
@@ -86,47 +86,49 @@
         </table>
 
         <!--Membuat Form | atribut lable dan id | Checkbox & Radio | Select & option-->
-        <form>
-            <h2>Give your feedback here</h2>
-            <label for="nama_user"><b>Name</b></label><br>
-            <input type="text" placeholder="Your name" id="nama_user">
-            <br>
-            <label for="name"><b>Feedback</b></label><br>
-            <textarea cols="100" rows="7" id="name"></textarea>
-            <br>
-
-            <fieldset >
-                <legend> Personal Data </legend>
-                <label><b>favorite vacation place</b></label><br>
-                <input type="checkbox" name="favorite" value="0"> mountain
-                <input type="checkbox" name="favorite" value="1"> beach
-                <input type="checkbox" name="favorite" value="2" checked> forest
-                <input type="checkbox" name="favorite" value="3"> zoo
+        <div id="formboth"> 
+            <form>
+                <h2>Give your feedback here</h2>
+                <label for="nama_user" class="ini"><b>Name</b></label><br>
+                <input type="text" placeholder="Your name" id="nama_user">
                 <br>
-                <label><b>Gender</b></label><br>
-                <input type="radio" name="gender" value="0"> male
-                <input type="radio" name="gender" value="1"> female
+                <label for="name" class="ini"><b>Feedback</b></label><br>
+                <textarea cols="100" rows="7" id="name"></textarea>
                 <br>
-                <label><b>status</b></label><br>
-                    <select>
-                        <optgroup label="teenager">
-                            <option value="Cs">college student</option>
-                            <option value="S">students</option>
-                        </optgroup>
 
-                        <optgroup label="adult">
-                            <option value="E">employees</option>
-                            <option value="F">freelancer</option>
-                        </optgroup>
-                    </select>
+                <fieldset >
+                    <legend> Personal Data </legend>
+                    <label class="ini"><b>favorite vacation place</b></label><br>
+                    <input type="checkbox" name="favorite" value="0"> mountain
+                    <input type="checkbox" name="favorite" value="1"> beach
+                    <input type="checkbox" name="favorite" value="2" checked> forest
+                    <input type="checkbox" name="favorite" value="3"> zoo
+                    <br>
+                    <label><b>Gender</b></label><br>
+                    <input type="radio" name="gender" value="0"> male
+                    <input type="radio" name="gender" value="1"> female
+                    <br>
+                    <label><b>status</b></label><br>
+                        <select>
+                            <optgroup label="teenager">
+                                <option value="Cs">college student</option>
+                                <option value="S">students</option>
+                            </optgroup>
 
-                    <br><br>
-                <input type="submit" value="send my message">
-            </fieldset>
-        </form>
+                            <optgroup label="adult">
+                                <option value="E">employees</option>
+                                <option value="F">freelancer</option>
+                            </optgroup>
+                        </select>
+
+                        <br><br>
+                    <input type="submit" value="send my message">
+                </fieldset>
+            </form>
+        </div>    
 
         <br><br>
-        <p>&copy; Muhammad Taufiq Shidiq</p>
+        <p id="copyright">&copy; Muhammad Taufiq Shidiq</p>
         
         &nbsp;&nbsp;&nbsp;&nbsp;
     </body>

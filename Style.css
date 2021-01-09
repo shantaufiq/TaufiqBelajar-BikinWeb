@@ -1,9 +1,5 @@
 
 
-*{
-    margin: 20px 50px 20px 50px;
-}
-
 body{
     /*
     background-color: #86abb0;
@@ -19,7 +15,7 @@ body{
     font-family: sans-serif;
 }
 
-/* Selector ID dan class | background color*/
+/*---- Selector ID dan class | background color ----*/
 .biru{
     color: yellowgreen;
 }
@@ -33,7 +29,28 @@ h6{
     color: teal;
 }
 
-/* text decoration */
+/*Selector untuk memilih semua elemen yang ada didalam elemen
+div "nama elemen"{
+}*/
+
+/*selector untuk memilih elemen yang langsung dibawah div
+div > nama elemen{
+}*/
+
+/*dua elemen sekaligus
+h1,h2{
+}*/
+
+/* memilih div setelah div
+div + div{
+}*/
+
+/*memilih semua bagian yang ada dibawahnya
+div ~ p{
+}*/
+
+
+/*---- text decoration ----*/
 h1{
     text-align: center;
     text-transform: uppercase;
@@ -41,6 +58,10 @@ h1{
 
 h2{
     text-transform: capitalize;
+}
+
+#par{
+    margin: 10px 10px 10px 10px;
 }
 
 #paragraf{
@@ -57,13 +78,19 @@ h2{
     margin-right: 0px;
 
     /* +dimensi */
-    width: 1200px;
-    height: 100px;
+    /*width: 1200px;
+    height: 100px;*/
 
-    padding: 10px;
+    padding: 20px;
 }
 
-/* belajar font */
+#copyright{
+    text-align: center;
+    clear: both;
+}
+
+
+/*---- belajar font ----*/
 #sebutkan{
     font-size: 35px;
     background-color: cornsilk;
@@ -74,7 +101,8 @@ h2{
     max-height: 0%;
 }
 
-/* menghias link | kondisi biasanya*/
+
+/*---- menghias link | kondisi biasanya ----*/
 .menu:link{
     background: orange;
     font-size: 20px;
@@ -92,7 +120,8 @@ h2{
     background: red;
 }
 
-/* display */
+
+/*---- display ----*/
 .menu{
     margin: 0 0 0 0;
     display: inline-block;
@@ -107,13 +136,54 @@ h2{
     */
     border: 3px solid rgb(255, 204, 108);
 
-    /* padding */
+    /*---- padding ----*/
     padding: 10px;
 }
 
-/* menghilangkan element */
+
+/*---- menghilangkan element ----*/
 #iglost{
     visibility: hidden;
 }
 
-/* box model dan margin => margin: top right bottom left; */
+
+/*---- box model dan margin => margin: top right bottom left; ----*/
+
+ /*---- Mengatur Posisi Elemen ----*/
+iframe{
+    /* position: relative;
+    left: 500px; */
+    /*position: absolute;
+    left: 1000px;*/
+    position: fixed;
+    left: 1000px;
+    bottom: 50px;
+
+    /*z-index*/
+    z-index: -1;
+}
+
+
+/*---- flot and clear ----*/
+img{
+    float: right;
+}
+
+#formboth{
+    clear: S;
+}
+
+
+/*---- hover ----*/
+
+#formboth h2:hover{
+    color: chartreuse;
+    background-color: mintcream;
+    max-width: 220px;
+}
+
+
+/*---- focus ----*/
+input:focus, textarea:focus{
+    background: olivedrab;
+}
