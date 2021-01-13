@@ -42,19 +42,54 @@
 // const p4 = sectionsecdua.querySelector('p');
 // p4.style.textAlign = 'center';
 
-//-- MANIPULATION ELEMENT --
+//-- DOM MANIPULATION ELEMENT --
 
-//-element.innerHTML-
-const judul = document.getElementById('judul')
-judul.innerHTML = '<em>Learn Javascript</em>';
+// //-element.innerHTML-
+// const judul = document.getElementById('judul')
+// judul.innerHTML = '<em>Learn Javascript</em>';
 
-//-element.syle.propertiCss-
-const a = document.getElementsByTagName('a');
-a[0].style.textDecoration = 'none';
+// //-element.syle.propertiCss-
+// const a = document.getElementsByTagName('a');
+// a[0].style.textDecoration = 'none';
 
-//-set atribute-
-judul.setAttribute('name', 'awal')
+// //-set atribute-
+// judul.setAttribute('name', 'awal')
 
-//-classList
-document.body.classList.toggle('biru-muda')
+// //-classList-
+// document.body.classList.toggle('biru-muda')
 
+//-- MANIPULATION NODE --
+
+//-buat elemen baru-
+const pBaru = document.createElement('p');
+const teksPBaru = document.createTextNode('New Paragraf');
+//-simpan tulisan ke dalam paragraf/disatuin-
+pBaru.appendChild(teksPBaru);
+
+//-simpan pBaru di akhir Section satu-
+const sectionSatu = document.getElementById('secsatu');
+sectionSatu.appendChild(pBaru);
+
+const liBaru = document.createElement('Li');
+const teksLibaru = document.createTextNode('this is new');
+liBaru.appendChild(teksLibaru);
+
+const ul = document.querySelector('section#secdua ul');
+const li2 = ul.querySelector('li:nth-child(2)')
+
+ul.insertBefore(liBaru, li2);
+
+//-parentNode.removeChild-
+const link = document.getElementsByTagName('a') [0];
+sectionSatu.removeChild(link);
+
+//-parentNode.replaceChild-
+const sectionB = document.getElementById('secdua');
+const p4 = sectionB.querySelector('p');
+
+const h2Baru = document.createElement('h2')
+const teksH2Baru = document.createTextNode('New Normal')
+
+h2Baru.appendChild(teksH2Baru)
+
+sectionB.replaceChild(h2Baru, p4)
