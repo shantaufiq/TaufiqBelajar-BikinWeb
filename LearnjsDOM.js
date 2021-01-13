@@ -79,17 +79,35 @@ const li2 = ul.querySelector('li:nth-child(2)')
 
 ul.insertBefore(liBaru, li2);
 
-//-parentNode.removeChild-
-const link = document.getElementsByTagName('a') [0];
-sectionSatu.removeChild(link);
+// //-parentNode.removeChild-
+// const link = document.getElementsByTagName('a') [0];
+// sectionSatu.removeChild(link);
 
-//-parentNode.replaceChild-
-const sectionB = document.getElementById('secdua');
-const p4 = sectionB.querySelector('p');
+// //-parentNode.replaceChild-
+// const sectionB = document.getElementById('secdua');
+// const p4 = sectionB.querySelector('p');
 
-const h2Baru = document.createElement('h2')
-const teksH2Baru = document.createTextNode('New Normal')
+// const h2Baru = document.createElement('h2')
+// const teksH2Baru = document.createTextNode('New Normal')
 
-h2Baru.appendChild(teksH2Baru)
+// h2Baru.appendChild(teksH2Baru)
 
-sectionB.replaceChild(h2Baru, p4)
+// sectionB.replaceChild(h2Baru, p4)
+
+// -- DOM EVENTS --
+const button = document.getElementsByTagName('button') [0];
+button.addEventListener('click', function() {
+   button.style.background = 'blue';
+});
+button.addEventListener('click', function() {
+   alert('sure, you will be a programmer');
+});
+
+const p4 = document.querySelector('section#secdua p');
+p4.addEventListener('click', function() {
+   const ul = document.querySelector('section#secdua ul');
+   const newli = document.createElement('li');
+   const teksnewli = document.createTextNode('item baru');
+   newli.appendChild(teksnewli);
+   ul.appendChild(newli);
+});
