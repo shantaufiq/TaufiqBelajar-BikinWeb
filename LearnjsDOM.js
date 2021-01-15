@@ -111,3 +111,5 @@ p4.addEventListener('click', function() {
    newli.appendChild(teksnewli);
    ul.appendChild(newli);
 });
+
+// -- DOM TRAVERSAL --
