@@ -127,7 +127,15 @@
         el.addEventListener('click', function(e) {
             e.target.parentElement.style.display = 'none';
             e.preventDefault(); // -> preventDefault 
+            e.stopPropagation()
         });
     });
+
+    const card = document.querySelectorAll('.card')
+    card.forEach(function(card) {
+        card.addEventListener('click', function(e) {
+            alert('ok')
+        })
+    })
 </script>
 </html>
