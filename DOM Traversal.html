@@ -69,21 +69,18 @@
     .card:hover .close {
         color: red;
     }
-
-    .card a {
-        text-decoration: none;
-    }     
+    
 </style>        
 </head>
 
 <body>
 
-<div class='container'>
+<div class="container">
     <div class="card">
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama">Muhammad taufiq</span>
         <span class="telp">081233218010</span>
-        <a href="" class="close">X</a>
+        <span class="close">X</span>
     </div> 
 
 
@@ -91,30 +88,28 @@
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama">M taufiq</span>
         <span class="telp">081233218010</span>
-        <a href="" class="close">X</a>
+        <span class="close">X</span>
     </div> 
-</div>
 
-<div class='container'>
     <div class="card">
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama">Muhammad </span>
         <span class="telp">081233218010</span>
-        <a href="" class="close">X</a>
+        <span class="close">X</span>
     </div> 
 
     <div class="card">
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama"> taufiq</span>
         <span class="telp">081233218010</span>
-        <a href="" class="close">X</a>
+        <span class="close">X</span>
     </div> 
 </div>
 </body>
 
 <script>
 // Event Handling
-    const close = document.querySelectorAll('.close');
+    // const close = document.querySelectorAll('.close');
     
     // for( let i = 0; i < close.length; i++ ) {
     //     close[i].addEventListener ('click', function(e) {
@@ -123,19 +118,27 @@
     // }
 
     //  -> array 
-    close.forEach(function(el) {
-        el.addEventListener('click', function(e) {
-            e.target.parentElement.style.display = 'none';
-            e.preventDefault(); // -> preventDefault 
-            e.stopPropagation()
-        });
-    });
+    // close.forEach(function(el) {
+    //     el.addEventListener('click', function(e) {
+    //         e.target.parentElement.style.display = 'none';
+    //         e.preventDefault(); // -> preventDefault 
+    //         e.stopPropagation()
+    //     });
+    // });
 
-    const card = document.querySelectorAll('.card')
-    card.forEach(function(card) {
-        card.addEventListener('click', function(e) {
-            alert('ok')
-        })
-    })
+    // const card = document.querySelectorAll('.card');
+    // card.forEach(function(card) {
+    //     card.addEventListener('click', function(e) {
+    //         alert('ok')
+    //     })
+    // })
+
+    const container = document.querySelector('.container');
+
+    container.addEventListener('click', function(e) {
+        if( e.target.className == 'close' ) {
+            e.target.parentElement.style.display = 'none';
+        }
+    });
 </script>
 </html>
