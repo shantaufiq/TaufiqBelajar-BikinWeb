@@ -68,6 +68,10 @@
     
     .card:hover .close {
         color: red;
+    }
+
+    .card a {
+        text-decoration: none;
     }     
 </style>        
 </head>
@@ -79,7 +83,7 @@
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama">Muhammad taufiq</span>
         <span class="telp">081233218010</span>
-        <span class="close">X</span>
+        <a href="" class="close">X</a>
     </div> 
 
 
@@ -87,7 +91,7 @@
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama">M taufiq</span>
         <span class="telp">081233218010</span>
-        <span class="close">X</span>
+        <a href="" class="close">X</a>
     </div> 
 </div>
 
@@ -96,14 +100,14 @@
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama">Muhammad </span>
         <span class="telp">081233218010</span>
-        <span class="close">X</span>
+        <a href="" class="close">X</a>
     </div> 
 
     <div class="card">
         <img src="Image/NEW 009.JPG" width="96" height="96">
         <span class="nama"> taufiq</span>
         <span class="telp">081233218010</span>
-        <span class="close">X</span>
+        <a href="" class="close">X</a>
     </div> 
 </div>
 </body>
@@ -122,6 +126,7 @@
     close.forEach(function(el) {
         el.addEventListener('click', function(e) {
             e.target.parentElement.style.display = 'none';
+            e.preventDefault();
         });
     });
 </script>
