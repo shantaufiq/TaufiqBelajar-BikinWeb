@@ -1,0 +1,10 @@
+#mainNav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.jumbotron {
+    background-image: url(../Image/back.JPG);
+    height: 500px;
+    text-align: center;
+}
