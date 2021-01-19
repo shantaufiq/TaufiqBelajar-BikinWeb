@@ -9,3 +9,14 @@
     width: 55px;
     height: 55px;
 }
+
+#Bawah {
+    background-color: rgb(38, 101, 196);
+}
+
+#mainNav {
+    background-color: rgb(38, 101, 196);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
