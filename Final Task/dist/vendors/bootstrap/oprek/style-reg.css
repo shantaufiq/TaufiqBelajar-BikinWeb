@@ -1,0 +1,27 @@
+#mainNav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+/* .jumbotron {
+    background-image: url(../Image/back.JPG);
+    margin-top: 57px;
+    height: 500px;
+    text-align: center;
+    padding-top: 105px;
+}
+
+/* !style untuk slider */
+
+/* .carousel-item {
+    height: 760px;
+}
+
+.carousel-item img {
+    margin-top: -120px;
+} */
+
+h5 {
+    background-color: cornflowerblue;
+}
