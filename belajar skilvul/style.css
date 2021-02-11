@@ -1,0 +1,5 @@
+/*! memasukkan Pseudo-element */
+p:hover {
+    color: blueviolet;
+    background: red;
+}
